@@ -1,0 +1,20 @@
+[
+  {
+    "form": "DPHDP3",
+    "file": "dphdp3.xsd",
+    "source": "https://adisspr.mfcr.cz/adis/jepo/schema/dphdp3_epo2.xsd",
+    "sha256": "08e7b168b0675c896298217b7049889d14789353220a973665a0bf33064aa0cf"
+  },
+  {
+    "form": "DPHKH1",
+    "file": "dphkh1.xsd",
+    "source": "https://adisspr.mfcr.cz/adis/jepo/schema/dphkh1_epo2.xsd",
+    "sha256": "fdee7efed604acff9c4862d6b5391ae019c4f0940a32086e0032b032245429f9"
+  },
+  {
+    "form": "DPHSHV",
+    "file": "dphshv.xsd",
+    "source": "https://adisspr.mfcr.cz/adis/jepo/schema/dphshv_epo2.xsd",
+    "sha256": "29cab9ccb767704a6f9d897a6656dce8423e3b9e1d1e734719b79ab18ff88dde"
+  }
+]

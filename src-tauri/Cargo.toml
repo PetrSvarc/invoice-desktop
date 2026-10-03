@@ -1,0 +1,30 @@
+[package]
+name = "invoice-desktop"
+version = "0.1.0"
+description = "Private Czech invoicing desktop"
+edition = "2021"
+rust-version = "1.87"
+
+[lib]
+name = "invoice_desktop_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.5", features = [] }
+
+[dependencies]
+tauri = { version = "2.9", features = [] }
+tauri-plugin-dialog = "2.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0", features = ["arbitrary_precision"] }
+sqlx = { version = "0.8.6", default-features = false, features = ["runtime-tokio", "sqlite", "macros"] }
+tokio = { version = "1.48", features = ["time", "sync", "macros"] }
+chrono = { version = "0.4", features = ["serde"] }
+rust_decimal = { version = "1.39", features = ["serde"] }
+reqwest = { version = "0.12.26", default-features = false, features = ["rustls-tls", "json"] }
+quick-xml = { version = "0.38.4", features = ["serialize"] }
+sha2 = "0.10.9"
+hex = "0.4"
+urlencoding = "2.1.3"
+csv = "1.4.0"
+qrcode = { version = "0.14.1", default-features = false }
